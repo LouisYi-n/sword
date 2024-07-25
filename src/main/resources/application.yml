@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: sword
+  profiles:
+    #active: @active.target.profile@
+    active: dev
+
+
+
+
+
