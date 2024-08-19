@@ -5,9 +5,10 @@ Java 小项目，用于记录一些 Java 相关的实际使用例子，也会添
 - JDK 1.8
 - Spring Boot 2.6.13
 - Mysql 8
+- Redis 
 
 ##  已实现功能
 - 使用 PDFBox 给 PDF 添加文字，图片水印
 - 集成 mybatis-plus
-  - 分页功能 （待实现）
+  - 分页功能
 - 使用 easyExcel 读取 Excel 文件 （待实现）
