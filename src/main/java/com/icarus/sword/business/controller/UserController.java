@@ -21,6 +21,11 @@ public class UserController {
         return userService.list();
     }
 
+    @GetMapping("/{id}")
+    public User get(@PathVariable(value = "id") Long id) {
+        return userService.getUserById(id);
+    }
+
     @GetMapping("/page")
     public Page<User> getUsersByPage(@RequestBody PageRequest pageRequest) {
         return userService.getUserByPage(pageRequest);

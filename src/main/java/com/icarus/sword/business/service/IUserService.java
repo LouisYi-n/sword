@@ -10,4 +10,6 @@ public interface IUserService extends IService<User> {
     Page<User> getUserByPage(PageRequest pageRequest);
 
     Page<User> getUserByPage2(int pageNo, int pageSize);
+
+    User getUserById(Long id);
 }
