@@ -1,12 +1,12 @@
-package com.icarus.sword.business.service.impl;
+package com.icarus.sword.system.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.icarus.sword.business.entity.User;
-import com.icarus.sword.business.mapper.UserMapper;
-import com.icarus.sword.business.service.IUserService;
+import com.icarus.sword.system.entity.User;
+import com.icarus.sword.system.mapper.UserMapper;
+import com.icarus.sword.system.service.IUserService;
 import com.icarus.sword.core.page.PageRequest;
-import com.icarus.sword.core.redis.service.RedisService;
+import com.icarus.sword.redis.service.RedisService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.icarus.sword.core.redis.service;
+package com.icarus.sword.redis.service;
 
 import java.util.List;
 import java.util.Map;

@@ -1,8 +1,8 @@
-package com.icarus.sword.business.service;
+package com.icarus.sword.system.service;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.IService;
-import com.icarus.sword.business.entity.User;
+import com.icarus.sword.system.entity.User;
 import com.icarus.sword.core.page.PageRequest;
 
 

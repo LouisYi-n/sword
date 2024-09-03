@@ -1,11 +1,11 @@
-package com.icarus.sword.core.redis.config;
+package com.icarus.sword.redis.config;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.jsontype.impl.LaissezFaireSubTypeValidator;
-import com.icarus.sword.core.redis.service.RedisService;
-import com.icarus.sword.core.redis.service.impl.RedisServiceImpl;
+import com.icarus.sword.redis.service.RedisService;
+import com.icarus.sword.redis.service.impl.RedisServiceImpl;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.data.redis.RedisAutoConfiguration;
 import org.springframework.cache.annotation.EnableCaching;

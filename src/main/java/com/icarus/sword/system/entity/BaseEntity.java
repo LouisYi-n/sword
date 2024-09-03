@@ -1,4 +1,4 @@
-package com.icarus.sword.business.entity;
+package com.icarus.sword.system.entity;
 
 import com.baomidou.mybatisplus.annotation.FieldFill;
 import com.baomidou.mybatisplus.annotation.TableField;

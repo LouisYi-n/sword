@@ -1,6 +1,6 @@
-package com.icarus.sword.core.redis.service.impl;
+package com.icarus.sword.redis.service.impl;
 
-import com.icarus.sword.core.redis.service.RedisService;
+import com.icarus.sword.redis.service.RedisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 

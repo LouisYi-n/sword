@@ -1,8 +1,8 @@
-package com.icarus.sword.business.controller;
+package com.icarus.sword.system.controller;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.icarus.sword.business.entity.User;
-import com.icarus.sword.business.service.IUserService;
+import com.icarus.sword.system.entity.User;
+import com.icarus.sword.system.service.IUserService;
 import com.icarus.sword.core.page.PageRequest;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

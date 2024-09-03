@@ -1,7 +1,7 @@
-package com.icarus.sword.business.mapper;
+package com.icarus.sword.system.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.icarus.sword.business.entity.User;
+import com.icarus.sword.system.entity.User;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper
