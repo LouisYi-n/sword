@@ -6,6 +6,8 @@ Java 小项目，用于记录一些 Java 相关的实际使用例子，也会添
 - Spring Boot 2.6.13
 - Mysql 8
 - Redis 
+- Spring security 
+- JWT
 
 ##  已实现功能
 - 使用 PDFBox 给 PDF 添加文字，图片水印
