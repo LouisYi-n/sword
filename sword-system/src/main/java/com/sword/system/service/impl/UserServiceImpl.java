@@ -2,7 +2,7 @@ package com.sword.system.service.impl;
 
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
-import com.sword.core.RedisCache;
+import com.sword.core.redis.RedisCache;
 import com.sword.page.PageRequest;
 import com.sword.system.entity.User;
 import com.sword.system.mapper.UserMapper;
