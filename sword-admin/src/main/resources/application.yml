@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: sword
+  banner:
+    location: classpath:banner.txt
+    charset: UTF-8
+  main:
+    banner-mode: console
+  profiles:
+    #active: @active.target.profile@
+    active: dev
+
+
+
+
+
+
