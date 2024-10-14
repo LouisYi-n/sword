@@ -62,10 +62,9 @@ public class SysLoginService {
             // 该方法会去调用UserDetailsServiceImpl.loadUserByUsername
             authentication = authenticationManager.authenticate(authenticationToken);
         } catch (Exception e) {
-            if (e instanceof BadCredentialsException)
-
+            if (e instanceof BadCredentialsException) {
                 throw new UserPasswordNotMatchException();
-            else {
+            } else {
                 throw new ServiceException(e.getMessage());
             }
         } finally {
