@@ -6,6 +6,11 @@ spring:
     charset: UTF-8
   main:
     banner-mode: console
+  # 资源信息
+  messages:
+    # 国际化资源文件路径
+    basename: i18n/messages
+    encoding: UTF-8
   profiles:
     #active: @active.target.profile@
     active: dev
