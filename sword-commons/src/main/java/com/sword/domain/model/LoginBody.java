@@ -1,5 +1,9 @@
 package com.sword.domain.model;
 
+import org.hibernate.validator.constraints.Length;
+
+import javax.validation.constraints.NotBlank;
+
 /**
  * 用户登录对象
  *
@@ -8,14 +12,12 @@ package com.sword.domain.model;
  * @date 2024/9/9 17:57
  */
 public class LoginBody {
-    /**
-     * 用户名
-     */
+
+    @NotBlank(message = "{use.name.can.not.be.empty}")
     private String username;
 
-    /**
-     * 用户密码
-     */
+    @NotBlank(message = "{password.can.not.be.empty}")
+    @Length(min = 5, max = 20, message = "{password.length.limit}")
     private String password;
 
     /**
