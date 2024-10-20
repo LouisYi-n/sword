@@ -19,7 +19,7 @@ public class I18NLocaleResolver implements LocaleResolver {
     @Override
     public Locale resolveLocale(HttpServletRequest httpServletRequest) {
         //获取请求中的语言参数
-        String language = httpServletRequest.getHeader("local");
+        String language = httpServletRequest.getHeader("Locale");
         //如果没有就使用默认的（根据主机的语言环境生成一个 Locale ）。
         //Locale locale = Locale.getDefault();
         //默认为中文
