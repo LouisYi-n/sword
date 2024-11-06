@@ -5,6 +5,7 @@ import com.sword.security.filter.JwtAuthenticationTokenFilter;
 import com.sword.security.handle.AuthenticationEntryPointImpl;
 import com.sword.security.handle.LogoutSuccessHandlerImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
@@ -108,7 +109,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests((requests) -> {
                     permitAllUrl.getUrls().forEach(url -> requests.antMatchers(url).permitAll());
                     // 对于登录login 注册register 验证码captchaImage 允许匿名访问
-                    requests.antMatchers("/test/**","/login", "/register", "/captchaImage").permitAll()
+                    requests.antMatchers("/actuator/**","/test/**","/login", "/register", "/captchaImage").permitAll()
                             // 静态资源，可匿名访问
                             .antMatchers(HttpMethod.GET, "/", "/*.html", "/**/*.html", "/**/*.css", "/**/*.js", "/profile/**").permitAll()
                             .antMatchers("/swagger-ui.html", "/swagger-resources/**", "/webjars/**", "/*/api-docs", "/druid/**").permitAll()

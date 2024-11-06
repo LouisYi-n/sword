@@ -29,6 +29,19 @@
             <artifactId>pdfbox</artifactId>
         </dependency>
 
+        <!-- 健康检查 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!--这个依赖用于把数据转换为prometheus格式使用-->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+            <version>1.9.2</version>
+        </dependency>
+
         <!-- 核心模块-->
         <dependency>
             <groupId>com.sword</groupId>

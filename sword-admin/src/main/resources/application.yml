@@ -15,6 +15,23 @@ spring:
     #active: @active.target.profile@
     active: dev
 
+#对外暴露哪些指标
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  #激活 promethues 并转换为对应的 promethues 数据
+  endpoint:
+    prometheus:
+      enabled: true
+    health:
+      show-details: always
+  #允许对应的数据指标被导出
+  metrics:
+    export:
+      prometheus:
+        enabled: true
 
 
 
