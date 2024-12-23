@@ -33,6 +33,10 @@ management:
       prometheus:
         enabled: true
 
+tianxing:
+    key: 629005819119c6f1f0221497e28cf9ed
+    base-url: https://apis.tianapi.com
+    rainbow-fart: /caihongpi/index
 
 
 
