@@ -1,8 +1,9 @@
 package com.sword.api.tianxing;
 
+import java.util.Map;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.stereotype.Component;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * @author louis
@@ -10,10 +11,10 @@ import org.springframework.stereotype.Component;
  * @date 2024/12/23 18:07
  */
 @Data
-@Component
+@Configuration
 @ConfigurationProperties(prefix = "tianxing")
-public class TianxingConfig {
+public class TianXingConfig {
     private String key;
     private String baseUrl;
-    private String rainbowFart;
+    private Map<String, String> urls;
 }

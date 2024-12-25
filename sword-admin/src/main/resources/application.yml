@@ -36,8 +36,13 @@ management:
 tianxing:
     key: 629005819119c6f1f0221497e28cf9ed
     base-url: https://apis.tianapi.com
-    rainbow-fart: /caihongpi/index
-
+    urls:
+      rainbow_fart: /caihongpi/index
+      say_love: /saylove/index
+      tian_gou: /tiangou/index
+      wang_yi_yun_hot_review: /hotreview/index
+      god_reply: /godreply/index
+      waste_sorting: /lajifenlei/index
 
 
 

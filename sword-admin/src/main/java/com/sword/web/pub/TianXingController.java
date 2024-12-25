@@ -1,12 +1,12 @@
 package com.sword.web.pub;
 
-import com.sword.api.tianxing.TianXingClient;
+import com.sword.api.tianxing.TianXingService;
 import com.sword.domain.AjaxResult;
-import com.sword.domain.tianxing.SampleContentResult;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -21,17 +21,60 @@ import org.springframework.web.bind.annotation.RestController;
 public class TianXingController {
 
     @Autowired
-    private TianXingClient tianXingClient;
+    private TianXingService tianXingService;
 
     @GetMapping("/rainbow-fart")
-    public AjaxResult getRainbowFart() {
+    public AjaxResult rainbowFart() {
         try {
-            return tianXingClient.getRainbowFart();
+            return tianXingService.rainbowFart();
         } catch (Exception e) {
-            log.error("调用天行数据彩虹屁API失败", e);
             return AjaxResult.error();
         }
+    }
 
+    @GetMapping("/say-love")
+    public AjaxResult sayLove() {
+        try {
+            return tianXingService.sayLove();
+        } catch (Exception e) {
+            return AjaxResult.error();
+        }
+    }
+
+    @GetMapping("/tian-gou")
+    public AjaxResult tianGou() {
+        try {
+            return tianXingService.tianGou();
+        } catch (Exception e) {
+            return AjaxResult.error();
+        }
+    }
+
+    @GetMapping("/god-reply")
+    public AjaxResult godreply() {
+        try {
+            return tianXingService.godreply();
+        } catch (Exception e) {
+            return AjaxResult.error();
+        }
+    }
+
+    @GetMapping("/wang-yi-yun-hot-review")
+    public AjaxResult wangYiYunHotReview() {
+        try {
+            return tianXingService.wangYiYunHotReview();
+        } catch (Exception e) {
+            return AjaxResult.error();
+        }
+    }
+
+    @GetMapping("/waste-sorting")
+    public AjaxResult wasteSorting(@RequestParam(value = "keyWord", required = false) String keyWord) {
+        try {
+            return tianXingService.wasteSorting("word", keyWord);
+        } catch (Exception e) {
+            return AjaxResult.error();
+        }
     }
 
 }
